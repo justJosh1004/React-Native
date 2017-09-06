@@ -1,13 +1,15 @@
 import React from 'react';
 import { View } from 'react-native';
 
-const CardSection = () => {
+const CardSection = (props) => {
     return (
-        <View></View>
+        <View style={styles.constainerStyle}>
+            {props.children}
+        </View>
     );
 };
 
-const style = {
+const styles = {
     constainerStyle: {
         borderBottomWidth: 1,
         padding: 5,
